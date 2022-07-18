@@ -1,0 +1,53 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html> <!--  preamble fully strandrad mode -->\r\n\r\n<html lang=\"eng\">\r\n    \r\n<head><!--document meta data -->\r\n    <meta charset=\"UTF-8\">\r\n    <title>HyperText Markup Language</title>\r\n    <link rel=\"icon\" href=\"favicon.png\">\r\n    <base href=\"localhost\">\r\n    <meta name=\"keywords\" content=\"IJSE, GDSE, Internet Technologies, GDSE 59, GDSE 60, HTML\">\r\n    <meta name=\"description\" content=\"This is a demonstration for GDSE students for learning HTML\">\r\n    <meta name=\"author\" content=\"Institute of Software Engineering\">\r\n    <meta name=\"owner\" content=\"IJSE\">\r\n    <meta name=\"viewport\" content=\"width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-scalable=no\">\r\n    <meta name=\"theme-color\" content=\"green\">  \r\n</head>\r\n<body>\r\n\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	
++++ b/index.html	
+@@ -1,20 +1,32 @@
+ <!DOCTYPE html> <!--  preamble fully strandrad mode -->
+ 
+ <html lang="eng">
+-    
++
+ <head><!--document meta data -->
+     <meta charset="UTF-8">
+     <title>HyperText Markup Language</title>
+-    <link rel="icon" href="favicon.png">
++    <link href="favicon.png" rel="icon">
+     <base href="localhost">
+-    <meta name="keywords" content="IJSE, GDSE, Internet Technologies, GDSE 59, GDSE 60, HTML">
+-    <meta name="description" content="This is a demonstration for GDSE students for learning HTML">
+-    <meta name="author" content="Institute of Software Engineering">
+-    <meta name="owner" content="IJSE">
+-    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-scalable=no">
+-    <meta name="theme-color" content="green">  
++    <meta content="IJSE, GDSE, Internet Technologies, GDSE 59, GDSE 60, HTML" name="keywords">
++    <meta content="This is a demonstration for GDSE students for learning HTML" name="description">
++    <meta content="Institute of Software Engineering" name="author">
++    <meta content="IJSE" name="owner">
++    <meta content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-scalable=no" name="viewport">
++    <meta content="green" name="theme-color">
+ </head>
+ <body>
+-
++<header>
++    <nav></nav>
++</header>
++<main>
++    <section></section>
++    <section>
++        <nav></nav>
++        <article></article>
++    </section>
++</main>
++<footer>
++    <address></address>
++</footer>
+ </body>
+ </html>
+\ No newline at end of file
