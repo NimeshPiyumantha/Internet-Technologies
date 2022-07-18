@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414dad5c-c14e-419e-9d38-39a5cc8cedc3" name="Changes" comment="" />
+    <list default="true" id="414dad5c-c14e-419e-9d38-39a5cc8cedc3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +24,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Internet-Technologies - Copy/Internet-Technologies/Basic" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -49,7 +52,7 @@
       <workItem from="1657864861541" duration="2270000" />
       <workItem from="1657955567085" duration="641000" />
       <workItem from="1658113896485" duration="4934000" />
-      <workItem from="1658121068675" duration="1314000" />
+      <workItem from="1658121068675" duration="2335000" />
     </task>
     <servers />
   </component>
