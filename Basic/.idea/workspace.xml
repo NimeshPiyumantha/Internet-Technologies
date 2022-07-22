@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414dad5c-c14e-419e-9d38-39a5cc8cedc3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/04_Inline_Text_Semantics.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,12 +25,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Internet-Technologies - Copy/Internet-Technologies/Basic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\LESSON\2nd Semester\Internet Technologies\project\Internet-Technologies\Basic" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Basic/index.html?_ij_reload" useBuiltInWebServerPort="true">
@@ -52,7 +58,9 @@
       <workItem from="1657864861541" duration="2270000" />
       <workItem from="1657955567085" duration="641000" />
       <workItem from="1658113896485" duration="4934000" />
-      <workItem from="1658121068675" duration="3074000" />
+      <workItem from="1658121068675" duration="3774000" />
+      <workItem from="1658460342598" duration="622000" />
+      <workItem from="1658460994756" duration="490000" />
     </task>
     <servers />
   </component>
