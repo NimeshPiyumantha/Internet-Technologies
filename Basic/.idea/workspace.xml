@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="414dad5c-c14e-419e-9d38-39a5cc8cedc3" name="Changes" comment="" />
+    <list default="true" id="414dad5c-c14e-419e-9d38-39a5cc8cedc3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/video/Serena.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04_Inline_Text_Semantics.html" beforeDir="false" afterPath="$PROJECT_DIR$/04_Inline_Text_Semantics.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +26,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Internet-Technologies - Copy/Internet-Technologies/Basic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/video" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -31,6 +35,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IJSE\LESSON\2nd Semester\Internet Technologies\project\Internet-Technologies\Basic\assets\video" />
       <recent name="D:\IJSE\LESSON\2nd Semester\Internet Technologies\project\Internet-Technologies\Basic" />
     </key>
   </component>
@@ -64,6 +69,7 @@
       <workItem from="1658678357366" duration="4000" />
       <workItem from="1658678377995" duration="92000" />
       <workItem from="1658717055358" duration="2629000" />
+      <workItem from="1658720448958" duration="1597000" />
     </task>
     <servers />
   </component>
