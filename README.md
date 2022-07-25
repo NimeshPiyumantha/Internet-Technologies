@@ -14,6 +14,7 @@ This is to demonstrate HTML
 ##
 
 * Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic
+* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/04_Inline_Text_Semantics.html
 
 ##  Connect with me
 <p align="center">
