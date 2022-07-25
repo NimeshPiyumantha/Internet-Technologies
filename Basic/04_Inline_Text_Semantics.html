@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HyperText Markup Language</title>
-    <link href="favicon.png" rel="icon">
+    <link href="assets/favicon.png" rel="icon">
     <!--    <base href="localhost">-->
     <meta content="IJSE, GDSE, Internet Technologies, GDSE 59, GDSE 60, HTML" name="keywords">
     <meta content="This is a demonstration for GDSE students for learning HTML" name="description">
@@ -11,6 +11,11 @@
     <meta content="IJSE" name="owner">
     <meta content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-scalable=no" name="viewport">
     <meta content="green" name="theme-color">
+    <style>
+        video::cue{
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,15 +24,9 @@
 
     <hr>
 
-    <video src="assets/video/Serena.mp4" controls width="800px" autoplay>
-        <track default src="assets/video/caption.vtt" kind="captions" srclang="eng">
+    <video src="assets/video/Serena.mp4" controls width="800px" muted autoplay  loop>
+        <track default src="assets/video/caption.vtt" kind="captions" srclang="en">
     </video>
-    <style>
-        video::cue{
-            color: crimson;
-
-        }
-    </style>
 
     <nav>
         <ol>
