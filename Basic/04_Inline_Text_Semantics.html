@@ -19,7 +19,15 @@
 
     <hr>
 
-    <video src="assets/video/Serena.mp4" controls width="800px" autoplay muted loop></video>
+    <video src="assets/video/Serena.mp4" controls width="800px" autoplay>
+        <track default src="assets/video/caption.vtt" kind="captions" srclang="eng">
+    </video>
+    <style>
+        video::cue{
+            color: crimson;
+
+        }
+    </style>
 
     <nav>
         <ol>

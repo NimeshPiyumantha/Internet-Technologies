@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="414dad5c-c14e-419e-9d38-39a5cc8cedc3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/video/Serena.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/video/caption.vtt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_18_2022_9_26_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_18_2022_9_26_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04_Inline_Text_Semantics.html" beforeDir="false" afterPath="$PROJECT_DIR$/04_Inline_Text_Semantics.html" afterDir="false" />
     </list>
@@ -32,6 +34,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -69,7 +72,8 @@
       <workItem from="1658678357366" duration="4000" />
       <workItem from="1658678377995" duration="92000" />
       <workItem from="1658717055358" duration="2629000" />
-      <workItem from="1658720448958" duration="1597000" />
+      <workItem from="1658720448958" duration="1793000" />
+      <workItem from="1658722802163" duration="494000" />
     </task>
     <servers />
   </component>
