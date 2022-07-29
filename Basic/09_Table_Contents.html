@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HyperText Markup Language</title>
-    <link href="assets/favicon.png" rel="icon">
+    <link href="favicon.png" rel="icon">
     <!--    <base href="localhost">-->
     <meta content="IJSE, GDSE, Internet Technologies, GDSE 59, GDSE 60, HTML" name="keywords">
     <meta content="This is a demonstration for GDSE students for learning HTML" name="description">
@@ -16,7 +16,8 @@
 <h1>Customer Table</h1>
 <hr>
 
-<table>
+<table border="2" width="700px" cellpadding="4">
+    <caption>This table illustrates customer data</caption>
     <thead>
     <tr>
         <th>ID</th>
@@ -30,8 +31,20 @@
     <tr>
         <td>C001</td>
         <td>Dasun</td>
-        <td>Galle</td>
-        <td>10,000</td>
+        <td colspan="2">Galle</td>
+        <!--<td>10,000</td>-->
+    </tr>
+    <tr>
+        <td>C002</td>
+        <td>Kamal</td>
+        <td>Panadura</td>
+        <td>20,000</td>
+    </tr>
+    <tr>
+        <td>C002</td>
+        <td>Kamal</td>
+        <td>Panadura</td>
+        <td>20,000</td>
     </tr>
     <tr>
         <td>C002</td>
@@ -40,6 +53,17 @@
         <td>20,000</td>
     </tr>
     </tbody>
+
+    <tfoot>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Salary</th>
+    </tr>
+    </tfoot>
 </table>
+
+
 </body>
 </html>
