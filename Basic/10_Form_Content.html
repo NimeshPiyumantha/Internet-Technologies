@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HyperText Markup Language</title>
-    <link href="favicon.png" rel="icon">
+    <link href="assets/favicon.png" rel="icon">
     <!--    <base href="localhost">-->
     <meta content="IJSE, GDSE, Internet Technologies, GDSE 59, GDSE 60, HTML" name="keywords">
     <meta content="This is a demonstration for GDSE students for learning HTML" name="description">
@@ -15,30 +15,31 @@
 <body>
 <h1>Forms</h1>
 <hr>
-<form>
+<form action="gedara" method="post">
     <fieldset>
         <legend>Customer Form</legend>
 
         <label for="txtCusId"> Customer ID</label>
-        <input id="txtCusId" type="text">
+        <input id="txtCusId" type="text" name="customerid">
         </br>
         </br>
 
         <label for="txtName"> Customer Name</label>
-        <input id="txtName" type="text">
+        <input id="txtName" type="text" name="customerName">
         </br>
         </br>
 
         <label for="txtAddress"> Customer Address</label>
-        <input id="txtAddress" type="text">
+        <input id="txtAddress" type="text" name="customerAddress">
         </br>
         </br>
 
         <label for="txtSalary"> Customer Salary</label>
-        <input id="txtSalary" type="number">
+        <input id="txtSalary" type="number" name="customerSalary">
         </br>
         </br>
 
+        <input type="checkbox"  name="option" value="IJSE">
         <input type="reset">
 
         <button>Save Customer</button>
