@@ -21,17 +21,17 @@
         <legend>Customer Form</legend>
 
         <label for="txtCusID">Customer ID</label>
-        <input type="text" id="txtCusID" name="customerid" placeholder="C001" required>
+        <input type="text" id="txtCusID" name="customerid" placeholder="C-001" required pattern="^[C](-[0-9]{3,4})$">
         <br>
         <br>
 
         <label for="txtCusName">Customer Name</label>
-        <input type="text" id="txtCusName" name="customername" placeholder="Ex: Ranjith" required>
+        <input type="text" id="txtCusName" name="customername" placeholder="Ex: Ranjith" required pattern="^([A-Z a-z]{5,40})$">
         <br>
         <br>
 
         <label for="txtCusAddress">Customer Address</label>
-        <input type="text" id="txtCusAddress" name="customeraddress" placeholder="No 16, Panadura" required>
+        <input type="text" id="txtCusAddress" name="customeraddress" placeholder="No 16, Panadura" required pattern="^[A-z0-9/, ]{6,30}$">
         <br>
         <br>
 
@@ -40,8 +40,45 @@
         <br>
         <br>
 
+        <label for="txtCusEmail">Your Email</label>
+        <input type="email" id="txtCusEmail" name="cusemail"  placeholder="nimesh12@gmail.com" required>
+        <br>
+        <br>
+
+        <label for="txtContact">Customer Contact</label>
+        <input type="number" id="txtContact" name="contact" placeholder="0777123456" required pattern="^(07(0|1|2|4|5|6|7|8)[0-9]{7})$">
+        <br>
+        <br>
+
+        <label for="txtCusPhoto">Your Photo</label>
+        <input type="file" id="txtCusPhoto" name="cusPhoto" required>
+        <br>
+        <br>
+
+        <label for="txtCusTel">Your TP</label>
+        <input type="tel" id="txtCusTel" name="cusTel"  placeholder="199.180.12.12" required>
+        <br>
+        <br>
+
+        <label for="txtCusColorTone">Your Color Tone</label>
+        <input type="color" id="txtCusColorTone" name="cusColor" required>
+        <br>
+        <br>
+
+        <label for="txtEngFlu">English Fluency</label>
+        <input type="range" min="0" max="100" id="txtEngFlu" name="cusLanguageFluency" required>
+        <br>
+        <br>
+
+        <label for="txtGenderMale">Male</label>
+        <input type="radio" id="txtGenderMale" name="gender" value="Male" required >
+        <label for="txtGenderFemale">Female</label>
+        <input type="radio"  id="txtGenderFemale" name="gender" value="Female" required >
+        <br>
+        <br>
+
         <label for="txtCusSalary">Customer Salary</label>
-        <input type="number" id="txtCusSalary" name="customersalary" placeholder="1000,00" required>
+        <input type="number" id="txtCusSalary" name="customersalary" placeholder="1000,00" required pattern="^[1-9][0-9]*([.][0-9]{1,2})?$">
         <br>
         <br>
 
