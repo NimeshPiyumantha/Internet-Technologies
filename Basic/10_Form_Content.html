@@ -16,7 +16,7 @@
 <h1>How to create a Forms</h1>
 <hr>
 <!--action--><!--actual location which we wanted to send the form data-->
-<form action="gedara" method="post" id="cusForm">>
+<form action="gedara" method="post" id="cusForm">
     <fieldset>
         <legend>Customer Form</legend>
 
@@ -99,9 +99,10 @@
 <br>
 <hr>
 <br>
-<button form="cusForm">Save Customer</button>
-<button form="cusForm">Update Customer</button>
-<button form="cusForm">Delete Customer</button>
+<button form="cusForm" formaction="saveCustomer" formmethod="post" formtarget="_blank">Save Customer</button>
+<button form="cusForm" formaction="updateCustomer" formmethod="get">Update Customer</button>
+<button form="cusForm" formaction="deleteCustomer" formmethod="post">Delete Customer</button>
+
 
 </body>
 </html>
