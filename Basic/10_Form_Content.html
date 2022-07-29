@@ -13,37 +13,48 @@
     <meta content="green" name="theme-color">
 </head>
 <body>
-<h1>Forms</h1>
+<h1>How to create a Forms</h1>
 <hr>
+<!--action--><!--actual location which we wanted to send the form data-->
 <form action="gedara" method="post">
     <fieldset>
         <legend>Customer Form</legend>
 
-        <label for="txtCusId"> Customer ID</label>
-        <input id="txtCusId" type="text" name="customerid">
-        </br>
-        </br>
+        <label for="txtCusID">Customer ID</label>
+        <input type="text" id="txtCusID" name="customerid" placeholder="C001" required>
+        <br>
+        <br>
 
-        <label for="txtName"> Customer Name</label>
-        <input id="txtName" type="text" name="customerName">
-        </br>
-        </br>
+        <label for="txtCusName">Customer Name</label>
+        <input type="text" id="txtCusName" name="customername" placeholder="Ex: Ranjith" required>
+        <br>
+        <br>
 
-        <label for="txtAddress"> Customer Address</label>
-        <input id="txtAddress" type="text" name="customerAddress">
-        </br>
-        </br>
+        <label for="txtCusAddress">Customer Address</label>
+        <input type="text" id="txtCusAddress" name="customeraddress" placeholder="No 16, Panadura" required>
+        <br>
+        <br>
 
-        <label for="txtSalary"> Customer Salary</label>
-        <input id="txtSalary" type="number" name="customerSalary">
-        </br>
-        </br>
+        <label for="txtCusBday">Customer Bday</label>
+        <input type="date" id="txtCusBday" name="cusbday" required>
+        <br>
+        <br>
 
-        <input type="checkbox"  name="option" value="IJSE">
+        <label for="txtCusSalary">Customer Salary</label>
+        <input type="number" id="txtCusSalary" name="customersalary" placeholder="1000,00" required>
+        <br>
+        <br>
+
+        <label for="txtCusSalary">Accept terms and conditions</label>
+        <input type="checkbox"  name="option" value="Accepted" required>
+        <br>
+        <br>
+
+        <!--button types-->
         <input type="reset">
-
         <button>Save Customer</button>
-
+        <button type="reset">Reset Customer</button>
+        <button type="button">Delete Customer</button>
     </fieldset>
 </form>
 </body>
