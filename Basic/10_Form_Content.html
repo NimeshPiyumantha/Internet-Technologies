@@ -78,7 +78,7 @@
         <br>
 
         <label for="txtRelation">Choose a Relationship:</label>
-        <select name="Relation" id="txtRelation">
+        <select name="Relation" id="txtRelation" required>
             <option value="">Relationship Status</option>
             <option value="single">Single</option>
             <option value="relationIn">In a Relationship</option>
@@ -89,6 +89,15 @@
         </select>
         <br>
         <br>
+
+        <!-- Text area -->
+        <label for="txtopinion">Your opinion</label>
+        <textarea name="myOpinion" id="txtopinion" cols="100" rows="10">
+
+        </textarea>
+        <br>
+        <br>
+
 
         <label for="txtCusSalary">Customer Salary</label>
         <input type="number" id="txtCusSalary" name="customersalary" placeholder="1000,00" required pattern="^[1-9][0-9]*([.][0-9]{1,2})?$">
