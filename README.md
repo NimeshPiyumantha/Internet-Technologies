@@ -7,7 +7,22 @@ This is to demonstrate HTML
 * CSS
 
 ##
--HTML Content
+- -HTML Content
+<ul>
+<li>Main Root</li>
+<li>Document Meta Data</li>
+<li>Sectioning Root</li>
+<li>Content Sectioning</li>
+<li>Text Content</li>
+<li>Inline Text Semantics</li>
+<li>Image and Multimedia</li>
+<li>Embeded Content</li>
+<li>Scripting</li>
+<li>Demarcating Edits</li>
+<li>Table Content</li>
+<li>Forms</li>
+<li>Interactive Elements</li>
+</ul>
 ##
 
 * Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/
@@ -20,7 +35,7 @@ This is to demonstrate HTML
 * Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/11_Interactive_Elements.html
 
 ##
--CSS Content
+- -CSS Content
 ##
 
 ###  
