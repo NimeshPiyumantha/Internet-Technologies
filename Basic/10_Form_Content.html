@@ -161,7 +161,6 @@
         <!-- Text area -->
         <label for="txtopinion">Your opinion</label>
         <textarea name="myOpinion" id="txtopinion" cols="100" rows="10">
-
         </textarea>
         <br>
         <br>
@@ -193,7 +192,16 @@
 <button form="cusForm" formaction="saveCustomer" formmethod="post" formtarget="_blank">Save Customer</button>
 <button form="cusForm" formaction="updateCustomer" formmethod="get">Update Customer</button>
 <button form="cusForm" formaction="deleteCustomer" formmethod="post">Delete Customer</button>
+<br>
+<br>
 
+<form oninput="dis.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" name="a" value="10">
+    <input type="number" name="b" value="2">
+    <output name="dis">0</output>
+</form>
+<br>
+<br>
 
 </body>
 </html>
