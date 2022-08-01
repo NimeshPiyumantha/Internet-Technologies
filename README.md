@@ -7,17 +7,21 @@ This is to demonstrate HTML
 * CSS
 
 ##
-
+-HTML Content
 ##
 
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/04_Inline_Text_Semantics.html
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/06_Embeded_Content.html
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/07_Scripting.html
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/08_Demarcating_Elemets.html
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/09_Table_Contents.html
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/10_Form_Content.html
+* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/
+* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/04_Inline_Text_Semantics.html
+* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/06_Embeded_Content.html
+* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/07_Scripting.html
+* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/08_Demarcating_Elemets.html
+* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/09_Table_Contents.html
+* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/10_Form_Content.html
+* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/11_Interactive_Elements.html
 
+##
+-CSS Content
+##
 
 ###  
 ### Clone this repository ✅
