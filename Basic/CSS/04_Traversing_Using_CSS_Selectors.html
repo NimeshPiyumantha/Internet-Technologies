@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Let's Traverse Using CSS selectors and Combinators</title>
+
+    <style>
+       /* body>main:nth-child(3) div:nth-child(2) li:nth-child(2){
+            color: red;
+            background-color: green;
+        }*/
+
+       body>main:nth-child(3)>section:last-child>div:nth-child(2) li:nth-child(2){
+           color: red;
+           background-color: green;
+       }
+
+    </style>
 </head>
 <body>
 <h1>CSS Traversing Using CSS selectors and Combinators</h1>
