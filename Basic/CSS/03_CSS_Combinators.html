@@ -30,17 +30,31 @@
 */
 
         /* Descendent Combinator (h1 can be inside any where in a section - no need to be a direct child)*/
+/*
         section h1{
             color: red;
         }
+*/
+
+        /* Adjacent Combinator - There should be a ul just after h1 - other wise not selecting */
+        h1 + ul {
+            color: red;
+        }
+
 
     </style>
     <title>CSS Combinators Usage</title>
 </head>
 <body>
 <main>
-    <section>
 
+    <section>
+        <h1>Hello</h1>
+        <p></p>
+        <ul>
+            <li>Hello</li>
+            <li>There</li>
+        </ul>
         <div>
             <h1>Hello there im inside lot of divas and section</h1>
             <div>
@@ -61,6 +75,12 @@
         <li>C</li>
         <li>D</li>
     </ul>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+    </ul>
 </section>
 
 <main>
@@ -74,12 +94,16 @@
 
     <article>
         <h1>Hello Im a H1 inside the article</h1>
-        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
-            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+            dolorem
+            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio
+            officia
             sapiente unde ut voluptas.</p>
 
-        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
-            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+            dolorem
+            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio
+            officia
             sapiente unde ut voluptas.</p>
     </article>
 
