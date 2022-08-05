@@ -18,12 +18,20 @@
             color: green;
         }
 
+        section>p{
+            color: red;
+            border: 1px solid red;
+        }
+
+        body>section>article>p{
+            background-color: yellow;
+        }
+
     </style>
     <title>CSS Combinators Usage</title>
 </head>
 <body>
 <h1>CSS Combinators.!</h1>
-
 <section>
     <h1>Hello There</h1>
     <ul>
@@ -34,15 +42,50 @@
     </ul>
 </section>
 
+<main>
+    <h1></h1>
+</main>
+
+<section>
+    <p>Inside Section - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
+        incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+        sapiente unde ut voluptas.</p>
+
+    <article>
+        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
+            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+            sapiente unde ut voluptas.</p>
+
+        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
+            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+            sapiente unde ut voluptas.</p>
+    </article>
+</section>
+<hr>
+<section>
+    <p>Inside Section - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
+        incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+        sapiente unde ut voluptas.</p>
+
+    <article>
+        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
+            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+            sapiente unde ut voluptas.</p>
+
+        <p>Inside Article - Hello there how are you Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem
+            incidunt ipsa laborum laudantium natus, odit quia sint! Amet delectus eligendi et magnam nesciunt odio officia
+            sapiente unde ut voluptas.</p>
+    </article>
+</section>
 
 <h1>Hello There</h1>
+
 <ul>
     <li>A</li>
     <li>B</li>
     <li>C</li>
     <li>D</li>
 </ul>
-
 
 </body>
 </html>
