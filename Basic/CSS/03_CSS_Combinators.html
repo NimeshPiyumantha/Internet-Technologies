@@ -51,9 +51,16 @@
             font-size: 30px;
         }
 */
+        /*select all paragraphs after h1. no need to follow the just after rule but h1 and p should be
+          in the same root */
         h1~p{
             font-weight: bold;
             color: purple;
+        }
+
+        /*We can mix combinators also*/
+        body>p+ul{
+            background-color: red;
         }
 
     </style>
