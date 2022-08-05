@@ -61,54 +61,62 @@
         /*    color: red;*/
         /*}*/
 
-        /*h1:first-child{
-            color: green;
-            font-size: 30px;
-        }
+        /* h1:first-child{
+             color: green;
+             font-size: 30px;
+         }*/
 
-        p:last-child {
+        /* p:last-child {
+             color: red;
+             font-size: 80px;
+         }*/
+
+        /* li:nth-child(2){
+             background-color: red;
+             color: yellow;
+             font-size: 30px;
+         }*/
+
+        /*p:nth-child(6){
             color: red;
-            font-size: 80px;
-        }
-
-        li:nth-child(2){
-            background-color: red;
-            color: yellow;
-            font-size: 30px;
-        }
-
-        p:nth-child(6){
-            color: green;
         }*/
 
-        li:before{
-            content: '😄 ';
-            color: darkred;
-            font-family: Jokerman,serif;
+        /*for creating cosmetic elements*/
+        /* h1:before{
+             content: "✋ ";
+             color: blue;
+             font-size: 50px;
+         }*/
+
+        /*h1:after{*/
+        /*    content: " 😂";*/
+        /*    color: red;*/
+        /*    font-size: 50px;*/
+        /*}*/
+
+        /* click */
+        h1:active{
+            color: red;
         }
 
-        li:after{
-            content: ' 😍';
-            font-family: Jokerman,serif;
+        /* after visiting to a link */
+        a:visited{
+            color: red;
         }
 
-        h1:before{
-            content: '😈 ';
-            color: green;
-            font-family: Jokerman,serif;
+        /* when a text field is focused..? */
+        input:focus{
+            background-color: orange;
+            color: white;
         }
-
-        h1:after{
-            content: '  🙀 ';
-            font-family: Jokerman,serif;
-        }
-
 
     </style>
 </head>
 <body>
 <h1>Cascading Style Sheets.</h1>
 <h1 id="myH1">Hello there How are you..!</h1>
+<input type="text" >
+<a href="http://youtube.com" target="_blank">Go To IJSE</a>
 <h2>Hello there How are you..!</h2>
 <a href="http://ijse.lk">Let's go to IJSE</a>
 
@@ -129,34 +137,14 @@
     <li>GDSE</li>
     <li>RWAD</li>
 </ol>
-
 <section>
-    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam blanditiis consectetur
-        consequatur
-        corporis debitis eveniet excepturi laboriosam laborum magnam magni non nulla optio quas, quidem sequi temporibus ut
-        voluptas.</p>
-    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam blanditiis consectetur
-        consequatur
-        corporis debitis eveniet excepturi laboriosam laborum magnam magni non nulla optio quas, quidem sequi temporibus ut
-        voluptas.</p>
-    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam blanditiis consectetur
-        consequatur
-        corporis debitis eveniet excepturi laboriosam laborum magnam magni non nulla optio quas, quidem sequi temporibus ut
-        voluptas.</p>
-    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam blanditiis consectetur
-        consequatur
-        corporis debitis eveniet excepturi laboriosam laborum magnam magni non nulla optio quas, quidem sequi temporibus ut
-        voluptas.</p>
-    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam blanditiis consectetur
-        consequatur
-        corporis debitis eveniet excepturi laboriosam laborum magnam magni non nulla optio quas, quidem sequi temporibus ut
-        voluptas.</p>
-    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam blanditiis consectetur
-        consequatur
-        corporis debitis eveniet excepturi laboriosam laborum magnam magni non nulla optio quas, quidem sequi temporibus ut
-        voluptas.</p>
+    <p>hello</p>
+    <p>there</p>
+    <p>How</p>
+    <p>are</p>
+    <p>you</p>
+    <p>Institute of Software Engineering</p>
 </section>
-<hr>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid at delectus deleniti distinctio, dolor eos,
     excepturi explicabo hic iste laboriosam odit porro quasi quod reiciendis repudiandae rerum sint suscipit!</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid at delectus deleniti distinctio, dolor eos,
@@ -167,6 +155,5 @@
     excepturi explicabo hic iste laboriosam odit porro quasi quod reiciendis repudiandae rerum sint suscipit!</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid at delectus deleniti distinctio, dolor eos,
     excepturi explicabo hic iste laboriosam odit porro quasi quod reiciendis repudiandae rerum sint suscipit!</p>
-
 </body>
 </html>
