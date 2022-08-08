@@ -5,6 +5,22 @@
     <title>Let's Traverse Using CSS selectors and Combinators</title>
     <style>
 
+        body>main>h1{
+            background: yellow;
+        }
+
+        body>article>h1{
+            background-color: red;
+        }
+
+        body>article>ul:last-child>li>ol>li:nth-child(2){
+            background-color: orangered;
+        }
+
+        body>main>section:last-child>div:last-child>section>section>ul:nth-child(3)>li:last-child>ol>li:first-child{
+            background-color: green;
+        }
+
 
     </style>
 </head>
