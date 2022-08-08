@@ -5,33 +5,48 @@
     <title>Cascading Style Sheets</title>
     <style>
 
+        /*1*/
         h1{
             color: red;
         }
 
+        /*100*/
         #selectID{
             color: green;
         }
 
+        /*10*/
         .selectClass{
             color: yellow;
         }
 
+        /*10 + 1 = 11*/
         .mainClass h1 {
-             color: orange;
+            color: orange;
         }
 
+        /* 1 + 1 + 1 + 10 + 1 = 14 */
         body>main>section:nth-child(2) h1{
             color: aqua;
         }
 
+        /* 1 + 1 + 1 + 10 + 1+ 1 + 10 + 1 = 26*/
         body>main>section:nth-child(2)>article>div:nth-child(2)>h1{
             color: chocolate;
         }
 
+        /* 1 + 1 + 1 + 10 + 1 + 1 + 10 + 1 = 26 */
         body>main>section:nth-child(2)>article>div:nth-child(2) h1{
             color: darkblue;
         }
+
+        /*Green */
+        /*DarkBlue */
+        /*Chocolate */
+        /*Aqua */
+        /*Orange */
+        /*Yellow */
+        /*Red */
 
     </style>
 </head>
@@ -39,21 +54,13 @@
 <main class="mainClass" id="mainID">
     <section></section>
     <section id="mainSection" class="mainSection">
-        <atricle id="mainArticle" class="mainArticle">
+        <article id="mainArticle" class="mainArticle">
             <div></div>
             <div id="selected div" class="selectedClass">
                 <h1 id="selectID" class="selectClass">Hello there..! Cascade Style Sheets</h1>
-                <!--Green-->
-                <!--darkblue-->
-                <!--chocolate-->
-                <!--aqua-->
-                <!--Orange-->
-                <!--Yellow-->
-                <!--Red-->
-
             </div>
             <div></div>
-        </atricle>
+        </article>
     </section>
     <section></section>
 </main>
