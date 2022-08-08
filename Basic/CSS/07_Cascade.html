@@ -4,44 +4,45 @@
     <meta charset="UTF-8">
     <title>Cascading Style Sheets</title>
     <style>
-
+        /*10*/
         .h1Group {
             color: blue;
         }
 
-        * {
-            color: yellow;
-        }
-
-        h1 {
-            color: purple;
-        }
-
+        /*2*/
         body > h1 {
             color: red;
         }
 
+        /*10*/
         :first-child {
             color: black;
         }
 
+        /*100*/
         #myHeading {
             color: crimson;
         }
 
+        /*10*/
         [id] {
             color: orange;
         }
 
+        /*1*/
+        h1 {
+            color: purple;
+        }
+
+        /*2*/
         body h1 {
             color: deeppink;
         }
 
-
     </style>
 </head>
 <body>
-
+<!--1000-->
 <h1 class="h1Group" id="myHeading" style="color: green;">Cascading</h1>
 <!--Green-->
 <!--Crimson-->
@@ -51,7 +52,6 @@
 <!--Deeppink-->
 <!--Red-->
 <!--Purple-->
-<!--Yellow-->
 
 
 </body>
