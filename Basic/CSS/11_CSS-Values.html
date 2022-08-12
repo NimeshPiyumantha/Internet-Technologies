@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" style="font-size: 40px">
+<!--<html lang="en" style="font-size: 40px">-->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>CSS Measurement Units</title>
@@ -67,24 +68,41 @@
           }*/
 
         /* rem - root element (HTML) ?*/
-        div {
-            font-size: 20px;
+        /* div {
+             font-size: 20px;
+         }
+
+         div > h1 {
+             font-size: 3rem;
+         }
+
+         div > p {
+             font-size: 1rem;
+         }*/
+
+
+        /*percentage (font-sizes/ length)*/
+
+        body>section{
+            width: 800px;
+            height: 500px;
+            border: 2px solid red;
         }
 
-        div > h1 {
-            font-size: 3rem;
+        section>div{
+            width:60%;
+            height: 500px;
+            background-color: yellow;
         }
 
-        div > p {
-            font-size: 1rem;
+        section>div>p{
+            font-size: 50%;
         }
-
 
     </style>
 </head>
-<body style="font-size: 100px">
+<body>
 <!--<h1>CSS Measurement Units</h1>-->
-<section></section>
 <section>
     <section>
         <div>
