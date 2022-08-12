@@ -5,85 +5,85 @@
     <title>Cascading Style Sheets</title>
     <style>
 
-       /* 1+100 =101*/
-        h1#selectID{
+        /* 1+100 =101*/
+        h1#selectID {
             color: red;
         }
 
-     /*   1+10 =11*/
-        h1.selectClass{
+        /*1+10 =11*/
+        h1.selectClass {
             color: deeppink;
         }
 
         /*1+100+10=111*/
-        h1#selectID.selectClass{
+        h1#selectID.selectClass {
             color: burlywood;
         }
 
         /*10+100=110*/
-        .mainClass #selectID{
+        .mainClass #selectID {
             color: green;
         }
 
         /*10*/
-        .selectClass{
+        .selectClass {
             color: yellow;
         }
 
         /*10+1=11*/
         .mainClass h1 {
-             color: orange;
+            color: orange;
         }
 
         /*1+1+1+10+1=14*/
-        body>main>section:nth-child(2) h1{
+        body > main > section:nth-child(2) h1 {
             color: aqua;
         }
 
         /*1+1+1+10+1+1+10+1+10=36*/
-        body>main>section:nth-child(2)>article>div:nth-child(2)>h1.selectClass{
+        body > main > section:nth-child(2) > article > div:nth-child(2) > h1.selectClass {
             color: chocolate;
         }
 
         /*1+1+1+10+1+1+10+1+10=36*/
-        body>main>section:nth-child(2)>article>div:nth-child(2) h1.selectClass{
+        body > main > section:nth-child(2) > article > div:nth-child(2) h1.selectClass {
             color: darkblue;
         }
 
         /*1+1+10+100+1+10+1+100+10+1+100+1+10+1+10=367*/
-        body>main.mainClass#mainID>section:nth-child(2)>article#mainArticle.mainArticle>div#selected-div:nth-child(2) h1.selectClass{
+        body > main.mainClass#mainID > section:nth-child(2) > article#mainArticle.mainArticle > div#selected-div:nth-child(2) h1.selectClass {
             color: darkmagenta;
         }
 
         /*10+10=20*/
-        .mainArticle .selectClass{
+        .mainArticle .selectClass {
             color: blueviolet;
         }
 
-/*
-      darkmagenta
-       burlywood
-       green
-       Red
-       darkblue
-       chocolate
-       blueviolet
-       aqua
-       orange
-       deeppink
-       yellow
-*/
+        /*
+              darkmagenta
+               burlywood
+               green
+               Red
+               darkblue
+               chocolate
+               blueviolet
+               aqua
+               orange
+               deeppink
+               yellow
+        */
 
     </style>
 </head>
 <body>
 <main class="mainClass" id="mainID">
     <section></section>
-    <section id="mainSection" class="mainSection">
-        <article id="mainArticle" class="mainArticle">
+    <section class="mainSection" id="mainSection">
+        <article class="mainArticle" id="mainArticle">
             <div></div>
-            <div id="selected-div" class="selectedClass">
-                <h1 id="selectID" class="selectClass">Hello there..! Cascade Style Sheets</h1>
+            <div class="selectedClass" id="selected-div">
+                <h1 class="selectClass" id="selectID">Hello there..! Cascade Style Sheets</h1>
             </div>
             <div></div>
         </article>
