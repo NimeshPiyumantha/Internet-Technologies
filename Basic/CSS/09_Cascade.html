@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascading Style Sheets</title>
+    <style>
+
+        h1#selectID{
+            color: red;
+        }
+
+        h1.selectClass{
+            color: deeppink;
+        }
+
+        h1#selectID.selectClass{
+            color: burlywood;
+        }
+
+
+        .mainClass #selectID{
+            color: green;
+        }
+
+
+        .selectClass{
+            color: yellow;
+        }
+
+
+        .mainClass h1 {
+             color: orange;
+        }
+
+
+        body>main>section:nth-child(2) h1{
+            color: aqua;
+        }
+
+
+        body>main>section:nth-child(2)>article>div:nth-child(2)>h1.selectClass{
+            color: chocolate;
+        }
+
+
+        body>main>section:nth-child(2)>article>div:nth-child(2) h1.selectClass{
+            color: darkblue;
+        }
+
+        body>main.mainClass#mainID>section:nth-child(2)>article#mainArticle.mainArticle>div#selected-div:nth-child(2) h1.selectClass{
+            color: darkmagenta;
+        }
+
+        .mainArticle .selectClass{
+            color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+<main class="mainClass" id="mainID">
+    <section></section>
+    <section id="mainSection" class="mainSection">
+        <article id="mainArticle" class="mainArticle">
+            <div></div>
+            <div id="selected-div" class="selectedClass">
+                <h1 id="selectID" class="selectClass">Hello there..! Cascade Style Sheets</h1>
+            </div>
+            <div></div>
+        </article>
+    </section>
+    <section></section>
+</main>
+</body>
+</html>
