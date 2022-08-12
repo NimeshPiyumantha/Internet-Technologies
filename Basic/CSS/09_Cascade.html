@@ -5,56 +5,74 @@
     <title>Cascading Style Sheets</title>
     <style>
 
+       /* 1+100 =101*/
         h1#selectID{
             color: red;
         }
 
+     /*   1+10 =11*/
         h1.selectClass{
             color: deeppink;
         }
 
+        /*1+100+10=111*/
         h1#selectID.selectClass{
             color: burlywood;
         }
 
-
+        /*10+100=110*/
         .mainClass #selectID{
             color: green;
         }
 
-
+        /*10*/
         .selectClass{
             color: yellow;
         }
 
-
+        /*10+1=11*/
         .mainClass h1 {
              color: orange;
         }
 
-
+        /*1+1+1+10+1=14*/
         body>main>section:nth-child(2) h1{
             color: aqua;
         }
 
-
+        /*1+1+1+10+1+1+10+1+10=36*/
         body>main>section:nth-child(2)>article>div:nth-child(2)>h1.selectClass{
             color: chocolate;
         }
 
-
+        /*1+1+1+10+1+1+10+1+10=36*/
         body>main>section:nth-child(2)>article>div:nth-child(2) h1.selectClass{
             color: darkblue;
         }
 
+        /*1+1+10+100+1+10+1+100+10+1+100+1+10+1+10=367*/
         body>main.mainClass#mainID>section:nth-child(2)>article#mainArticle.mainArticle>div#selected-div:nth-child(2) h1.selectClass{
             color: darkmagenta;
         }
 
+        /*10+10=20*/
         .mainArticle .selectClass{
             color: blueviolet;
         }
 
+/*
+      darkmagenta
+       burlywood
+       green
+       Red
+       darkblue
+       chocolate
+       blueviolet
+       aqua
+       orange
+       deeppink
+       yellow
+*/
 
     </style>
 </head>
