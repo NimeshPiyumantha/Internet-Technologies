@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Measurement Units</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <style>
         /*Integers, Decimal , percentages, functions, dimensions, keywords*/
         /*h1{*/
@@ -42,16 +42,27 @@
 
         /*Relative Measurement Units*/
         /* Not fixed - always depend on others and calculate the value*/
-        /* VW 0-100*/
-        div{
-            /*viewport width*/
-            width: 50vw;
-            height: 50vh;
+        /* VW 0-100 , VH */
+        /*div{*/
+        /*    !*viewport Width*!*/
+        /*    width: 100vw;*/
+        /*    !*Viewport Height*!*/
+        /*    height: 100vh;*/
+        /*    background-color: red;*/
+        /*}*/
 
-            background-color: red;
+        /* em */
+
+        div{
+            font-size: 20px;
         }
 
-
+        div>h1{
+            font-size: 3em;
+        }
+        div>p{
+            font-size: 1em;
+        }
 
 
     </style>
@@ -60,6 +71,13 @@
 <!--<h1>CSS Measurement Units</h1>-->
 
 <div>
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque distinctio doloremque doloribus eligendi, eos,
+        error, eveniet ex libero magnam nesciunt nisi possimus quo recusandae sequi sunt unde? Ad, asperiores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque distinctio doloremque doloribus eligendi, eos,
+        error, eveniet ex libero magnam nesciunt nisi possimus quo recusandae sequi sunt unde? Ad, asperiores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque distinctio doloremque doloribus eligendi, eos,
+        error, eveniet ex libero magnam nesciunt nisi possimus quo recusandae sequi sunt unde? Ad, asperiores.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque distinctio doloremque doloribus eligendi, eos,
         error, eveniet ex libero magnam nesciunt nisi possimus quo recusandae sequi sunt unde? Ad, asperiores.</p>
 </div>
