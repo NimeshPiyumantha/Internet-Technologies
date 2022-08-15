@@ -5,14 +5,47 @@
     <title>CSS Positions</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <style>
+        /*There are two types of elements
+            Block Level Elements
+                Get the parent full with 100%
+                Box Model Ok
+                Vertically, One after another
 
+            Inline Elements
+                Only get the content space
+                Width & Height Not Working
+                No Line Breaks
+                Box model not working properly
 
+            Inline- Block
+                Intermediate level of Inline and Block level
+                Width & Height Woks
+                Box Model Works
+                No line breaks.
+                Hold only content space
+        */
+
+        /* We can change the default behaviour of elements*/
+        h1 {
+            display: inline; /* block/inline-block */
+            border: 2px solid red;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        body > ul li {
+            display: inline-block;
+            margin-left: 4px;
+            color: blue;
+        }
     </style>
 </head>
 <body>
 <h1>Hello There.. CSS</h1>
-<img src="assets/img/img.jpg" alt="">
-<img src="assets/img/img1.jpg" alt="">
+<h1>Hello There.. CSS</h1>
+<br>
+<img alt="" src="assets/img/img.jpg">
+<img alt="" src="assets/img/img1.jpg">
 <div>
     DIV ONE
 </div>
@@ -25,12 +58,14 @@
 <button>Search Customer</button>
 <button>Update Customer</button>
 <h1>Hello HTML</h1>
+
 <ul>
     <li>List One</li>
     <li>List Two</li>
     <li>List Three</li>
     <li>List Four</li>
 </ul>
+
 
 </body>
 </html>
