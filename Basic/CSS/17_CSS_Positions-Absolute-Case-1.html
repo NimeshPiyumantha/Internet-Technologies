@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Absolute Position</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        /* CSS POSITIONS
+           01. Static (Default) left,right,top,bottom
+           02. Relative
+           03. Absolute
+           04. Fixed
+           05. Sticky
+        */
+
+
+        /*Absolute*/
+        /* After applying absolute it is removed from the normal flow */
+        /* Then he decide his position according to the parent */
+        /**/
+
+        main{
+            border: 2px solid red;
+            width: 700px;
+            height: 500px;
+        }
+
+        section{
+            border: 2px solid green;
+            width: 500px;
+            height: 400px;
+        }
+        div{
+            border: 2px solid orange;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div>
+
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
