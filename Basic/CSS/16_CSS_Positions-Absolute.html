@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positions 2</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        /* CSS POSITIONS
+           01. Static (Default) left,right,top,bottom
+           02. Relative
+           03. Absolute
+           04. Fixed
+           05. Sticky
+        */
+
+        div{
+            border: 2px solid green;
+            background-color: forestgreen;
+            height: 200px;
+            width: 200px;
+        }
+
+        /*Absolute*/
+        /* After applying absolute it is removed from the normal flow */
+        /* Then he decide his position according to the parent */
+        /**/
+        div:nth-child(1){
+            border: 2px solid red;
+            background-color: crimson;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<h1>Hello There..! Let's Talk about how to move items using CSS</h1>
+<h1>Hello There.. CSS</h1>
+<br>
+<img alt="" src="assets/img/img.jpg">
+<img alt="" src="assets/img/img1.jpg">
+<div>
+    DIV ONE
+</div>
+<h1>Cascading Style Sheets</h1>
+<div>
+    DIV ONE
+</div>
+<button>Save Customer</button>
+<button>Delete Customer</button>
+<button>Search Customer</button>
+<button>Update Customer</button>
+<h1>Hello HTML</h1>
+
+</body>
+</html>
