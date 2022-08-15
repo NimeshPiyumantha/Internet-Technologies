@@ -6,23 +6,35 @@
     <title>CSS Measurement Units</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <style>
-    section{
-        width: 400px;
-        height: 300px;
-        border: 2px solid crimson;
-    }
+        main {
+            width: 600px;
+            height: 400px;
+            border: 2px solid red;
+            font-size: 50px;
+        }
 
-    section>div{
-        width: 50%;
-        height: 50%;
-        background-color: yellow;
-    }
+        section {
+            border: 2px solid yellow;
+
+        }
+
+        section > div {
+            width: 50%; /*get the nearest parent width and calculate the value*/
+            height: 50%; /*get the nearest parent height and calculate the value*/
+            background-color: yellow;
+            font-size: 200%;
+        }
+
     </style>
 </head>
 <body>
-<section>
-    <div></div>
-</section>
+<main>
+    <section>
+        <div>
+            Hello there how are you.
+        </div>
+    </section>
+</main>
 
 
 </body>
