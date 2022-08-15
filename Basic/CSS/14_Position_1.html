@@ -27,20 +27,33 @@
 
         /* We can change the default behaviour of elements*/
         h1 {
-            display: inline; /* block/inline-block */
+            display: inline-block; /* block/inline-block */
             border: 2px solid red;
             padding: 10px;
             margin: 20px;
         }
 
-        body > ul li {
+        ul {
+            border: 2px solid crimson;
+            font-size: 30px;
+            color: crimson;
+        }
+
+        ul > li {
             display: inline-block;
-            margin-left: 4px;
-            color: blue;
+            padding: 10px;
+
         }
     </style>
 </head>
 <body>
+<ul>
+    <li>List One</li>
+    <li>List Two</li>
+    <li>List Three</li>
+    <li>List Four</li>
+</ul>
+
 <h1>Hello There.. CSS</h1>
 <h1>Hello There.. CSS</h1>
 <br>
@@ -58,13 +71,6 @@
 <button>Search Customer</button>
 <button>Update Customer</button>
 <h1>Hello HTML</h1>
-
-<ul>
-    <li>List One</li>
-    <li>List Two</li>
-    <li>List Three</li>
-    <li>List Four</li>
-</ul>
 
 
 </body>
