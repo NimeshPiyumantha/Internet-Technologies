@@ -17,21 +17,21 @@
         /*Absolute*/
         /* After applying absolute it is removed from the normal flow */
         /* Then he decide his position according to the parent */
+        /*How it select a qualified parent*/
+        /*The position should not be static */
         /**/
 
         main{
             border: 2px solid red;
             width: 700px;
             height: 500px;
-        }
+            position: relative;
 
+        }
         section{
             border: 2px solid green;
             width: 500px;
             height: 400px;
-            position: relative;
-
-
         }
         div{
             border: 2px solid orange;
@@ -39,7 +39,7 @@
             height: 100px;
             background-color: yellow;
             position: absolute;
-            right: 0;
+            left: 0;
             bottom: 0;
         }
 
