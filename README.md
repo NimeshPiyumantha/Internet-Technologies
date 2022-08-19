@@ -7,7 +7,7 @@ This is to demonstrate HTML
 * CSS
 
 ##
-- -HTML Content
+### -HTML Content
 <ul>
 <li>Main Root</li>
 <li>Document Meta Data</li>
@@ -23,19 +23,13 @@ This is to demonstrate HTML
 <li>Forms</li>
 <li>Interactive Elements</li>
 </ul>
-##
 
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/04_Inline_Text_Semantics.html
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/06_Embeded_Content.html
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/07_Scripting.html
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/08_Demarcating_Elemets.html
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/09_Table_Contents.html
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/10_Form_Content.html
-* Project Link : https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/HTML/11_Interactive_Elements.html
 
 ##
-- -CSS Content
+### -CSS Content
+##
+
+[![CSS](https://github.com/NimeshPiyumantha/Internet-Technologies/blob/main/Basic/CSS/assets/ss/case_1.png)](https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/CSS/18_Case_One.html)</br>
 ##
 
 ###  
