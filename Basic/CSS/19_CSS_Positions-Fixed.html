@@ -15,6 +15,14 @@
 
         /*Fixed*/
         /* Removed from the normal flow */
+        /* This is differ from absolute, not positioned to the nearest parent if the parent
+           has non static position
+
+           Position according to the view port. After applying fix this element is not visible to
+           other elements
+
+            Other elements will browse through it
+        */
 
 
         main {
@@ -31,13 +39,30 @@
         }
 
         div {
-            border: 2px solid orange;
+            border: 2px solid #9c27b0;
             position: fixed;
-            width: 100px;
-            height: 100px;
-            background-color: yellow;
-            right: 0;
-            bottom: 0;
+            width: 186px;
+            height: 57px;
+            border-radius: 41px;
+            background-color: #673ab7;
+            right: 40px;
+            bottom: 40px;
+            cursor: pointer;
+        }
+
+        div:hover{
+            background-color: #962ce2;
+        }
+
+        div:hover>h1{
+            color: #35ff8c;
+        }
+
+        div>h1{
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 14px;
         }
     </style>
 </head>
@@ -45,12 +70,12 @@
 <main>
     <section>
         <div>
-
+            <h1> Q & A . ?</h1>
         </div>
         <h1>Inside Section - Hello</h1>
     </section>
 </main>
-<section>
+<article>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi blanditiis eum, ipsa laborum maiores minus
         molestias nisi quaerat quam. Blanditiis culpa cumque, deserunt enim in nisi tempora ut vel? Sunt!</p>
     <p>A, alias amet animi aut commodi consectetur dignissimos distinctio esse explicabo facilis fugiat itaque
@@ -76,7 +101,52 @@
     <p>Consequuntur dicta, dignissimos est, facere inventore iste officia placeat provident quae, quasi tempora
         temporibus veritatis! Ab autem cumque cupiditate dolores iste magni nobis obcaecati possimus quidem! Excepturi
         numquam praesentium tempora.</p>
-</section>
+    <p>Ab aliquid, commodi corporis dicta dolor eligendi et eum facere ipsam ipsum labore libero maiores placeat, qui
+        ratione repellat rerum sed unde. Adipisci dolore, error fugiat illum nisi sit voluptate.</p>
+    <p>Ab, amet aperiam, asperiores beatae commodi consequatur cupiditate, debitis delectus doloremque ea earum eum iure
+        libero numquam omnis perferendis quam quod quos saepe sequi similique soluta totam vero voluptas voluptatum?</p>
+    <p>Ab culpa cupiditate debitis eaque eius error esse exercitationem illum laborum libero magnam, maiores natus,
+        nesciunt non omnis quaerat quis quos saepe sed temporibus ullam ut vitae voluptate, voluptates voluptatum.</p>
+    <p>Consequuntur dicta, dignissimos est, facere inventore iste officia placeat provident quae, quasi tempora
+        temporibus veritatis! Ab autem cumque cupiditate dolores iste magni nobis obcaecati possimus quidem! Excepturi
+        numquam praesentium tempora.</p>
+    <p>Ab aliquid, commodi corporis dicta dolor eligendi et eum facere ipsam ipsum labore libero maiores placeat, qui
+        ratione repellat rerum sed unde. Adipisci dolore, error fugiat illum nisi sit voluptate.</p>
+    <p>Ab, amet aperiam, asperiores beatae commodi consequatur cupiditate, debitis delectus doloremque ea earum eum iure
+        libero numquam omnis perferendis quam quod quos saepe sequi similique soluta totam vero voluptas voluptatum?</p>
+    <p>Ab culpa cupiditate debitis eaque eius error esse exercitationem illum laborum libero magnam, maiores natus,
+        nesciunt non omnis quaerat quis quos saepe sed temporibus ullam ut vitae voluptate, voluptates voluptatum.</p>
+    <p>Consequuntur dicta, dignissimos est, facere inventore iste officia placeat provident quae, quasi tempora
+        temporibus veritatis! Ab autem cumque cupiditate dolores iste magni nobis obcaecati possimus quidem! Excepturi
+        numquam praesentium tempora.</p>
+    <p>Ab aliquid, commodi corporis dicta dolor eligendi et eum facere ipsam ipsum labore libero maiores placeat, qui
+        ratione repellat rerum sed unde. Adipisci dolore, error fugiat illum nisi sit voluptate.</p>
+    <p>Ab, amet aperiam, asperiores beatae commodi consequatur cupiditate, debitis delectus doloremque ea earum eum iure
+        libero numquam omnis perferendis quam quod quos saepe sequi similique soluta totam vero voluptas voluptatum?</p>
+    <p>Ab culpa cupiditate debitis eaque eius error esse exercitationem illum laborum libero magnam, maiores natus,
+        nesciunt non omnis quaerat quis quos saepe sed temporibus ullam ut vitae voluptate, voluptates voluptatum.</p>
+    <p>Consequuntur dicta, dignissimos est, facere inventore iste officia placeat provident quae, quasi tempora
+        temporibus veritatis! Ab autem cumque cupiditate dolores iste magni nobis obcaecati possimus quidem! Excepturi
+        numquam praesentium tempora.</p>
+    <p>Ab aliquid, commodi corporis dicta dolor eligendi et eum facere ipsam ipsum labore libero maiores placeat, qui
+        ratione repellat rerum sed unde. Adipisci dolore, error fugiat illum nisi sit voluptate.</p>
+    <p>Ab, amet aperiam, asperiores beatae commodi consequatur cupiditate, debitis delectus doloremque ea earum eum iure
+        libero numquam omnis perferendis quam quod quos saepe sequi similique soluta totam vero voluptas voluptatum?</p>
+    <p>Ab culpa cupiditate debitis eaque eius error esse exercitationem illum laborum libero magnam, maiores natus,
+        nesciunt non omnis quaerat quis quos saepe sed temporibus ullam ut vitae voluptate, voluptates voluptatum.</p>
+    <p>Consequuntur dicta, dignissimos est, facere inventore iste officia placeat provident quae, quasi tempora
+        temporibus veritatis! Ab autem cumque cupiditate dolores iste magni nobis obcaecati possimus quidem! Excepturi
+        numquam praesentium tempora.</p>
+    <p>Ab aliquid, commodi corporis dicta dolor eligendi et eum facere ipsam ipsum labore libero maiores placeat, qui
+        ratione repellat rerum sed unde. Adipisci dolore, error fugiat illum nisi sit voluptate.</p>
+    <p>Ab, amet aperiam, asperiores beatae commodi consequatur cupiditate, debitis delectus doloremque ea earum eum iure
+        libero numquam omnis perferendis quam quod quos saepe sequi similique soluta totam vero voluptas voluptatum?</p>
+    <p>Ab culpa cupiditate debitis eaque eius error esse exercitationem illum laborum libero magnam, maiores natus,
+        nesciunt non omnis quaerat quis quos saepe sed temporibus ullam ut vitae voluptate, voluptates voluptatum.</p>
+    <p>Consequuntur dicta, dignissimos est, facere inventore iste officia placeat provident quae, quasi tempora
+        temporibus veritatis! Ab autem cumque cupiditate dolores iste magni nobis obcaecati possimus quidem! Excepturi
+        numquam praesentium tempora.</p>
+</article>
 
 </body>
 </html>
