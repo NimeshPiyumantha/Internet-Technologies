@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Fixed Position</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        /* CSS POSITIONS
+           01. Static (Default) left,right,top,bottom
+           02. Relative
+           03. Absolute
+           04. Fixed
+           05. Sticky
+        */
+
+        /*Fixed*/
+        /* Removed from the normal flow */
+
+
+        main {
+            border: 2px solid red;
+            width: 700px;
+            height: 500px;
+        }
+
+        section {
+            border: 2px solid green;
+            width: 500px;
+            height: 400px;
+            position: relative;
+        }
+
+        div {
+            border: 2px solid orange;
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div>
+
+        </div>
+        <h1>Inside Section - Hello</h1>
+    </section>
+</main>
+<section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi blanditiis eum, ipsa laborum maiores minus
+        molestias nisi quaerat quam. Blanditiis culpa cumque, deserunt enim in nisi tempora ut vel? Sunt!</p>
+    <p>A, alias amet animi aut commodi consectetur dignissimos distinctio esse explicabo facilis fugiat itaque
+        laudantium odit officiis perferendis quas quidem quis rerum totam, unde ut veritatis vitae voluptate. Aperiam,
+        cumque?</p>
+    <p>Consequatur ea eligendi est fugiat illo iusto laudantium molestiae nobis pariatur perferendis, quas quos
+        reprehenderit, rerum sit tempore? Accusantium amet animi asperiores, dolores hic itaque obcaecati possimus
+        reiciendis? Iste, necessitatibus.</p>
+    <p>Aperiam blanditiis eum nulla praesentium quibusdam, totam ut? Accusamus accusantium aliquam, aut consectetur cum
+        deserunt dolores ea exercitationem explicabo maiores minima minus obcaecati optio quaerat reiciendis rem
+        sapiente sit ullam?</p>
+    <p>Accusantium cumque dignissimos est illum in inventore magnam nihil omnis! Adipisci alias amet autem consectetur
+        cumque, debitis delectus doloremque ducimus ea, fugit hic illo libero qui quod ratione temporibus
+        voluptates.</p>
+    <p>Architecto id incidunt quae unde voluptas. Accusantium architecto atque eaque enim, esse eveniet ex explicabo id
+        in ipsam labore modi neque nostrum perspiciatis, placeat quibusdam, quod rem sed velit voluptas?</p>
+    <p>Ab aliquid, commodi corporis dicta dolor eligendi et eum facere ipsam ipsum labore libero maiores placeat, qui
+        ratione repellat rerum sed unde. Adipisci dolore, error fugiat illum nisi sit voluptate.</p>
+    <p>Ab, amet aperiam, asperiores beatae commodi consequatur cupiditate, debitis delectus doloremque ea earum eum iure
+        libero numquam omnis perferendis quam quod quos saepe sequi similique soluta totam vero voluptas voluptatum?</p>
+    <p>Ab culpa cupiditate debitis eaque eius error esse exercitationem illum laborum libero magnam, maiores natus,
+        nesciunt non omnis quaerat quis quos saepe sed temporibus ullam ut vitae voluptate, voluptates voluptatum.</p>
+    <p>Consequuntur dicta, dignissimos est, facere inventore iste officia placeat provident quae, quasi tempora
+        temporibus veritatis! Ab autem cumque cupiditate dolores iste magni nobis obcaecati possimus quidem! Excepturi
+        numquam praesentium tempora.</p>
+</section>
+
+</body>
+</html>
