@@ -27,8 +27,9 @@ This is to demonstrate HTML
 
 ##
 ### -CSS Content
-##
 
+
+##  Case 1
 [![CSS](https://github.com/NimeshPiyumantha/Internet-Technologies/blob/main/Basic/CSS/assets/ss/case_1.png)](https://nimeshpiyumantha.github.io/Internet-Technologies/Basic/CSS/18_Case_One.html)</br>
 ##
 
