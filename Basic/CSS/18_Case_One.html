@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case One</title>
+    <!--Apply CSS Reset-->
+    <link href="assets/css/normalize.css" rel="stylesheet">
+
+    <style>
+        main {
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+        main > section {
+            height: 50vh;
+            width: 50vw;
+            position: absolute;
+        }
+
+        main > section:nth-child(1) {
+            background: red;
+            left: 0;
+            top: 0;
+        }
+
+        main > section:nth-child(2) {
+            background: green;
+            right: 0;
+            top: 0;
+        }
+
+        main > section:nth-child(3) {
+            background: orange;
+            bottom: 0;
+            left: 0;
+        }
+
+        main > section:nth-child(4) {
+            background: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+
+        main > div:first-of-type {
+            position: absolute;
+            width: 230px;
+            height: 230px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            border: 1px solid white;
+            background: white;
+        }
+
+        main > div:first-of-type > div {
+            width: 60%;
+            height: 60%;
+            background: red;
+            border-radius: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        main > div:nth-child(6), main > div:nth-child(7), main > div:nth-child(8), main > div:nth-child(9){
+            width: 150px;
+            height: 150px;
+            border: 2px solid white;
+            position: absolute;
+            background: white;
+        }
+
+        main > div:nth-child(6){
+            left: 0;
+            top: 0;
+            border-bottom-right-radius: 100%;
+        }
+
+        main > div:nth-child(7){
+            right: 0;
+            top: 0;
+            border-bottom-left-radius: 100%;
+        }
+
+        main > div:nth-child(8){
+            right: 0;
+            bottom: 0;
+            border-top-left-radius: 100%;
+        }
+
+        main > div:nth-child(9){
+            left: 0;
+            bottom: 0;
+            border-top-right-radius: 100%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<main>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+
+    <!--Center box-->
+    <div>
+        <!--Center circle-->
+        <div></div>
+    </div>
+
+    <!--Half circles for edges-->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+
+</main>
+
+</body>
+</html>
