@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS New Layouts</title>
+    <style>
+        /* Flex Box is a new layout which was introduced to create one directional rows and columns
+        * By adding display:flex to a element it convert to a flex container and all the elements
+            inside that container will adjust to the container height
+        * But with of the elements will be calculated according to the content size of the element
+        */
+        section {
+            border: 1px solid red;
+            height: 400px;
+            display: flex;
+            /*flex-direction: column-reverse; !*row (default) / column / row-reverse / column-reverse *!*/
+        }
+
+        section > div {
+            border: 1px solid green;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+</section>
+</body>
+</html>
