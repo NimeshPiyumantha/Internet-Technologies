@@ -43,7 +43,28 @@
             font-family: 'Poppins', sans-serif;
             color: rgba(46, 41, 41, 0.96);
             font-size: 19px;
+            border-right: 2px solid rgba(46, 41, 41, 0.58);
 
+        }
+
+        header > nav > ul > li:first-child{
+            border-left: 2px solid rgba(46, 41, 41, 0.58);
+        }
+
+        main ul>li:hover a{
+            color: #eee309;
+        }
+
+        main ul>li:hover i{
+            color: #ff9500;
+        }
+
+        header ul>li:hover a{
+            color: rgba(228, 12, 12, 0.89);
+        }
+
+        header ul>li:hover i{
+            color: #c21e1e;
         }
 
         main {
@@ -64,10 +85,15 @@
             padding-top: 40px;
             font-size: 19px;
             cursor: pointer;
+
         }
 
         header ul>li>i{
             padding-right: 6px;
+        }
+        header ul>li>a{
+            color: rgba(46, 41, 41, 0.96);
+            text-decoration: none;
         }
 
         main ul>li>i{
@@ -109,10 +135,10 @@
     <img alt="Logo" src="assets/img/favicon.png">
     <nav>
         <ul>
-            <li><i class="fa-solid fa-house"></i>Home</li>
-            <li><i class="fa-solid fa-earth-asia"></i>Services</li>
-            <li><i class="fa-solid fa-headphones-simple"></i>Contact</li>
-            <li><i class="fa-solid fa-address-card"></i>About Us</li>
+            <li><i class="fa-solid fa-house"></i><a href="https://ijse.lk" target="_blank">Home</a></li>
+            <li><i class="fa-solid fa-earth-asia"></i><a href="#">Services</a></li>
+            <li><i class="fa-solid fa-headphones-simple"></i><a href="#">Contact</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
         </ul>
     </nav>
 </header>
