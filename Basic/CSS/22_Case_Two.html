@@ -2,249 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Basic Web Layout</title>
-    <link href="assets/css/normalize.css" rel="stylesheet">
-    <meta content="width=device-width initial-scale=1" name="viewport">
-    <link href="assets/img/fav.png" rel="icon">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
-
+    <title>Stacking Contents</title>
     <style>
-        * {
-            font-family: 'Poppins', sans-serif;
+        div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
         }
 
-        header {
-            background: white;
-            box-shadow: 0px -1px 8px 2px #1c1717e8;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            height: 73px;
-            z-index: 2;
-        }
-
-        header > img {
-            width: 190px;
+        div:nth-child(1) {
+            background: red;
             position: relative;
-            top: 20px;
-            left: 10px;
+            z-index: 4; /*now this will be top from this two divs' because this has the highest value*/
         }
 
-        header > nav {
-            position: absolute;
-            right: 40px;
-            top: 0;
-        }
-
-        header > nav > ul > li {
-            display: inline-block;
-            cursor: pointer;
-            padding: 10px;
-            font-family: 'Poppins', sans-serif;
-            color: rgba(46, 41, 41, 0.96);
-            font-size: 19px;
-            border-right: 2px solid rgba(46, 41, 41, 0.58);
-
-        }
-
-        header > nav > ul > li:first-child{
-            border-left: 2px solid rgba(46, 41, 41, 0.58);
-        }
-
-        main ul>li:hover a{
-            color: #eee309;
-        }
-
-        main ul>li:hover i{
-            color: #ff9500;
-        }
-
-        header ul>li:hover a{
-            color: rgba(228, 12, 12, 0.89);
-        }
-
-        header ul>li:hover i{
-            color: #c21e1e;
-        }
-
-        main {
+        div:nth-child(2) {
+            background: green;
             position: relative;
-            margin-top: 73px;
+            z-index: 3;
         }
 
-        main > nav {
-            position: absolute;
-            background: #24327f;
-            top: 0;
-            bottom: 0;
-            width: 270px;
-        }
-
-        main > nav > ul > li {
-            color: white;
-            list-style: none;
-            padding-top: 40px;
-            font-size: 19px;
-            cursor: pointer;
-
-        }
-
-        header ul>li>i{
-            padding-right: 6px;
-        }
-        header ul>li>a{
-            color: rgba(46, 41, 41, 0.96);
-            text-decoration: none;
-        }
-
-        main ul>li>i{
-            padding-right: 15px;
-            font-size: 20px;
-            color: #ccffcd;
-        }
-        main ul>li>a{
-            color: #ccffcd;
-            text-decoration: none;
-        }
-
-        main > section {
-            margin-left: 270px;
-            padding: 10px;
-        }
-
-        main > section p {
-            color: #433636f5;
-        }
-
-        footer {
-            height: 60px;
-            background: #363030;
-        }
-
-        footer > h4 {
-            text-align: center;
-            margin-top: 0;
-            padding-top: 20px;
-            color: #e5e5e5;
-        }
+        /*By Default Lastly loaded elements have a high priority in the content stack
+        * if we want to manage the content stack order as we wish we can use z-index property to handle it
+        * Note - z-index only work with non-static positioned elements
+        */
 
     </style>
 </head>
 <body>
-
-<header>
-    <img alt="Logo" src="assets/img/favicon.png">
-    <nav>
-        <ul>
-            <li><i class="fa-solid fa-house"></i><a href="https://ijse.lk" target="_blank">Home</a></li>
-            <li><i class="fa-solid fa-earth-asia"></i><a href="#">Services</a></li>
-            <li><i class="fa-solid fa-headphones-simple"></i><a href="#">Contact</a></li>
-            <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <nav>
-        <ul>
-            <li><i class="fa-solid fa-house"></i><a href="https://ijse.lk" target="_blank">Home</a></li>
-            <li><i class="fa-solid fa-earth-asia"></i><a href="#">Services</a></li>
-            <li><i class="fa-solid fa-headphones-simple"></i><a href="#">Contact</a></li>
-            <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
-        </ul>
-    </nav>
-    <section>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-        <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque possimus praesentium rerum
-                sequi. Aspernatur culpa exercitationem magni nostrum nulla officia quas quidem quo quos recusandae.
-                Corporis dignissimos dolore laborum.</p>
-            <p>Alias asperiores at, autem blanditiis commodi culpa cupiditate, doloribus expedita facere fugit hic id
-                itaque maiores minima minus nesciunt praesentium quasi, suscipit veritatis vitae? Deleniti dicta et
-                officia possimus vero?</p>
-            <p>Ad beatae consequatur dicta distinctio dolor dolorem, dolorum ea exercitationem explicabo harum labore
-                laudantium libero magni mollitia, perspiciatis, quae quam quisquam reiciendis totam ullam ut veritatis
-                voluptatum? Eveniet, laudantium voluptas.</p>
-            <p>A adipisci asperiores ex excepturi explicabo minima porro ratione sapiente sequi sit tempore, vel?
-                Consequuntur deserunt dolorem error ipsum nihil numquam odio ratione ut? Accusantium, aperiam at! Hic,
-                odio rem.</p>
-            <p>Amet aspernatur, at dicta doloremque eligendi expedita explicabo nesciunt optio reiciendis tempora! Ad
-                consectetur magnam maiores non odio recusandae saepe voluptatum. Architecto dignissimos excepturi in
-                laboriosam nam nemo, nostrum quidem.</p>
-            <p>Ad consequatur esse odio provident qui quisquam velit. Asperiores consequatur corporis, deleniti deserunt
-                doloremque doloribus iusto laudantium natus nobis non pariatur praesentium provident quaerat quia quos
-                reprehenderit repudiandae sequi unde.</p>
-            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
-                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
-                Ducimus, numquam quam.</p>
-            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
-                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
-                sint vitae voluptas.</p>
-            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
-                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
-                Ducimus, numquam quam.</p>
-            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
-                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
-                sint vitae voluptas.</p>
-            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
-                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
-                Ducimus, numquam quam.</p>
-            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
-                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
-                sint vitae voluptas.</p>
-            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
-                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
-                Ducimus, numquam quam.</p>
-            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
-                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
-                sint vitae voluptas.</p>
-            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
-                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
-                sint vitae voluptas.</p>
-            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
-                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
-                Ducimus, numquam quam.</p>
-            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
-                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
-                sint vitae voluptas.</p>
-            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
-                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
-                sint vitae voluptas.</p>
-            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
-                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
-                Ducimus, numquam quam.</p>
-            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
-                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
-                sint vitae voluptas.</p>
-            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
-                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
-                sint vitae voluptas.</p>
-            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
-                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
-                Ducimus, numquam quam.</p>
-            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
-                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
-                sint vitae voluptas.</p>
-            <p>Consequatur, fuga inventore magnam minus provident quas qui quis quos reiciendis reprehenderit, rerum
-                saepe ut veritatis! Architecto, aut consequatur delectus doloribus earum fugit natus possimus qui sed ut
-                velit voluptatum.</p>
-            <p>Aliquid commodi consectetur consequuntur corporis cupiditate debitis, dicta dolor dolore dolorum ducimus
-                eaque, eum harum in iure mollitia non numquam omnis provident qui saepe sint suscipit ullam veniam vitae
-                voluptates.</p>
-        </section>
-    </section>
-</main>
-
-<footer>
-    <h4>Developed By IJSE</h4>
-</footer>
+<div></div>
+<div></div>
 
 </body>
 </html>
