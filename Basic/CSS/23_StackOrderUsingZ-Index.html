@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stacking Contents</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+        }
+
+        div:nth-child(1) {
+            background: red;
+            position: relative;
+            z-index: 4; /*now this will be top from this two divs' because this has the highest value*/
+        }
+
+        div:nth-child(2) {
+            background: green;
+            position: relative;
+            z-index: 3;
+        }
+
+        /*By Default Lastly loaded elements have a high priority in the content stack
+        * if we want to manage the content stack order as we wish we can use z-index property to handle it
+        * Note - z-index only work with non-static positioned elements
+        */
+
+
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+
+</body>
+</html>
