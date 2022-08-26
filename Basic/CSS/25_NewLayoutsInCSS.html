@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS New Layouts</title>
+    <style>
+        section {
+            border: 1px solid red;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1000px;
+        }
+
+        section > div {
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.67);
+            height: 120px;
+            width: 120px;
+        }
+
+        section > div:nth-child(1) {
+            background-color: red;
+            /*align-self: self-start;*/
+            order: 6;
+        }
+
+        section > div:nth-child(2) {
+            background-color: orangered;
+            order: 4;
+        }
+
+        section > div:nth-child(3) {
+            background-color: deeppink;
+            /*align-self: self-end;*/
+            order: 5;
+        }
+
+        section > div:nth-child(4) {
+            background-color: red;
+            /*align-self: self-start;*/
+            order: 2;
+        }
+
+        section > div:nth-child(5) {
+            background-color: orangered;
+            order: 3;
+        }
+
+        section > div:nth-child(6) {
+            background-color: deeppink;
+            /*align-self: self-end;*/
+            order: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+<section> <!--Flex Container-->
+    <div>A</div><!--Flex Item-->
+    <div>B</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>D</div><!--Flex Item-->
+    <div>E</div><!--Flex Item-->
+    <div>F</div><!--Flex Item-->
+</section>
+</body>
+</html>
