@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Layout Case 5</title>
+    <style>
+
+        section{
+            width: 1200px;
+            height: 600px;
+            border: 2px solid red;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr);
+        }
+        section>div{
+            border: 2px solid red;
+            color: black;
+            font-size: 20px;
+        }
+
+        section>div:nth-child(1){
+            grid-column: 1/3; /*start point / end point */
+            grid-row: 1/3;
+        }
+
+    </style>
+</head>
+<body>
+<section> <!--Grid Container-->
+    <div style="background:#f00505">A</div> <!--Grid Items-->
+    <div style="background:#ae00ff">B</div> <!--Grid Items-->
+    <div style="background:#0024ff">C</div> <!--Grid Items-->
+    <div style="background:#0affb6">D</div> <!--Grid Items-->
+    <div style="background:#e3057f">E</div> <!--Grid Items-->
+    <div style="background:#eeff00">F</div> <!--Grid Items-->
+    <div style="background:#ff9500">G</div> <!--Grid Items-->
+    <div style="background:#00ff09">H</div> <!--Grid Items-->
+    <div style="background:#6219e3">I</div> <!--Grid Items-->
+    <div style="background:#0077ff">J</div> <!--Grid Items-->
+    <div style="background:#01ff7b">K</div> <!--Grid Items-->
+    <div style="background:#f48888">L</div> <!--Grid Items-->
+</section>
+</body>
+</html>

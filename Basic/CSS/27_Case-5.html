@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Layout Case 5</title>
+    <style>
+
+        section{
+            width: 1200px;
+            height: 600px;
+            /*border: 2px solid red;*/
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50px;
+            margin: auto;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr);
+            gap: 9px;
+        }
+        section>div{
+            /*border: 2px solid red;*/
+            background: url("assets/img/img.jpg");
+            background-size: cover;
+            background-position: center;
+            box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.68);
+        }
+
+    </style>
+</head>
+<body>
+<section> <!--Grid Container-->
+    <div></div> <!--Grid Items-->
+    <div></div> <!--Grid Items-->
+    <div></div> <!--Grid Items-->
+    <div></div> <!--Grid Items-->
+    <div></div> <!--Grid Items-->
+    <div></div> <!--Grid Items-->
+    <div></div> <!--Grid Items-->
+    <div></div> <!--Grid Items-->
+    <div></div> <!--Grid Items-->
+    <div></div> <!--Grid Items-->
+    <div></div> <!--Grid Items-->
+    <div></div> <!--Grid Items-->
+</section>
+</body>
+</html>
