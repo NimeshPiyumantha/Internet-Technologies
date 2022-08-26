@@ -13,21 +13,70 @@
             border: 1px solid red;
             height: 400px;
             display: flex;
-            /*flex-direction: column-reverse; !*row (default) / column / row-reverse / column-reverse *!*/
+            /*flex-direction: row; !*row (default) / column / row-reverse / column-reverse *!*/
+            align-items: center; /* Flex Container Y axis*/ /* flex-start (Default) / center / flex-end*/ /*(Cross Axis )*/
+            justify-content: space-evenly; /* Flex container X axis*/ /* center / flex-start / flex-end / space-evenly / space-around / space-between */ /* Main-Axis */
+            /*flex-wrap: wrap; !*No Wrap (Default)*! !*Wrap and NoWrap*!*/
         }
 
         section > div {
             border: 1px solid green;
             height: 100px;
             width: 100px;
+
+            /*Flex Grow*/ /* default 0*/
+            /*Flex Shrink*/  /*default 1*/
+            /*Flex Basis*/ /* auto or item width */
+
+            flex-shrink: 0;
         }
+
     </style>
 </head>
 <body>
-<section>
-    <div>A</div>
-    <div>B</div>
-    <div>C</div>
+<section> <!--Flex Container-->
+    <div>A</div><!--Flex Item-->
+    <div>B</div><!--Flex Item-->
+    <div>B</div><!--Flex Item-->
+    <div>B</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+
 </section>
 </body>
 </html>
