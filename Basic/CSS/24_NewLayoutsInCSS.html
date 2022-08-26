@@ -28,7 +28,20 @@
             /*Flex Shrink*/  /*default 1*/
             /*Flex Basis*/ /* auto or item width */
 
-            flex-shrink: 0;
+            flex-shrink: 1; /* if 0 shrink factor is off*/
+            /*By doing this flex items will overflow the flex container*/
+
+            /*flex-grow: 1;*/
+        }
+
+        section>div:nth-child(1){
+            background-color: red;
+            flex-grow: 1;
+        }
+
+        section>div:nth-child(2){
+            background-color: green;
+            flex-grow: 1;
         }
 
     </style>
@@ -37,46 +50,8 @@
 <section> <!--Flex Container-->
     <div>A</div><!--Flex Item-->
     <div>B</div><!--Flex Item-->
-    <div>B</div><!--Flex Item-->
-    <div>B</div><!--Flex Item-->
     <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-    <div>C</div><!--Flex Item-->
-
+    <div>D</div><!--Flex Item-->
 </section>
 </body>
 </html>
