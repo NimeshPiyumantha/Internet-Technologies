@@ -2,32 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Grid Layout</title>
+    <title>CSS New Layouts</title>
     <style>
-        section{
-            width: 500px;
-            height: 500px;
-            border: 2px solid red;
-            display: grid;
+        /* Flex Box is a new layout which was introduced to create one directional rows and columns
+        * By adding display:flex to a element it convert to a flex container and all the elements
+            inside that container will adjust to the container height
+        * But with of the elements will be calculated according to the content size of the element
+        */
+        section {
+            border: 1px solid red;
+            height: 400px;
+            display: flex;
+            /*flex-direction: row; !*row (default) / column / row-reverse / column-reverse *!*/
+            align-items: center; /* Flex Container Y axis*/ /* flex-start (Default) / center / flex-end*/ /*(Cross Axis )*/
+            justify-content: space-evenly; /* Flex container X axis*/ /* center / flex-start / flex-end / space-evenly / space-around / space-between */ /* Main-Axis */
+            /*flex-wrap: wrap; !*No Wrap (Default)*! !*Wrap and NoWrap*!*/
         }
 
-        section>div{
-            border: 1px solid orangered;
+        section > div {
+            border: 1px solid green;
+            height: 100px;
+            width: 100px;
+
+            /*Flex Grow*/ /* default 0*/ /* The unitless Proportion value*/
+            /*Flex Shrink*/  /*default 1*/
+            /*Flex Basis*/ /* auto or item width */
+
+            flex-shrink: 1; /* if 0 shrink factor is off*/
+            /*By doing this flex items will overflow the flex container*/
+
+            /*flex-grow: 1;*/
         }
+
+        section>div:nth-child(1){
+            background-color: red;
+            /*flex-grow: 1;*/
+            flex-basis: 200px; /* flex items minimum width */
+        }
+
+        section>div:nth-child(2){
+            background-color: green;
+            /*flex-grow: 2;*/
+            flex-basis: 500px;
+        }
+        section>div:nth-child(3){
+            background-color: orange;
+            /*flex-grow: 2;*/
+        }
+
+        section>div:nth-child(4){
+            background-color: deeppink;
+            /*flex-grow: 1;*/
+            flex-basis: 300px;
+        }
+
 
     </style>
 </head>
 <body>
-<section>
-    <div>A</div>
-    <div>B</div>
-    <div>C</div>
-    <div>D</div>
-    <div>E</div>
-    <div>F</div>
-    <div>G</div>
-    <div>G</div>
-    <div>I</div>
+<section> <!--Flex Container-->
+    <div>A</div><!--Flex Item-->
+    <div>B</div><!--Flex Item-->
+    <div>C</div><!--Flex Item-->
+    <div>D</div><!--Flex Item-->
 </section>
 </body>
 </html>
