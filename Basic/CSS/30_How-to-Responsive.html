@@ -6,10 +6,11 @@
     <meta content="width=device-width initial-scale=1" name="viewport">
     <style>
 
+        /* Media Queries */
+
         h1 {
             color: red;
         }
-
 
         /*Condition */
         /* @media print {
@@ -19,31 +20,108 @@
              }
          }*/
 
-        @media all and (max-width: 375px){ /*if the condition through then apply the CSS rules inside the block*/
+        /*   !* Apply if the range between 0px to 375px *!
+           @media all and (max-width: 375px){ !*if the condition through then apply the CSS rules inside the block*!
+               h1 {
+                   color: green;
+                   font-size: 50px;
+               }
+               h2{
+                   color: orangered;
+               }
+           }
+
+           !* Apply if the range between 375px to 425px *!
+           @media all and (min-width: 375px) and (max-width: 425px){
+               h1 {
+                   color: red;
+                   font-size: 50px;
+                   border: 2px solid red;
+               }
+               h2{
+                   color: red;
+               }
+           }
+           */
+
+
+        /* 0 - 320 */
+        @media all and (max-width: 320px) {
             h1 {
-                color: green;
-                font-size: 50px;
+                color: red;
             }
-            h2{
-                color: orangered;
+
+            h2 {
+                color: red;
+            }
+
+        }
+
+        /* 320 - 375 */
+        @media all and (min-width: 320px) and (max-width: 375px) {
+            h1 {
+                color: orange;
+            }
+
+            h2 {
+                color: orange;
             }
         }
 
-        @media all and (min-width: 375px) and (max-width: 425px){
+        /* 375 - 425 */
+        @media all and (min-width: 375px) and (max-width: 425px) {
             h1 {
-                color: red;
-                font-size: 50px;
-                border: 2px solid red;
+                color: deeppink;
             }
-            h2{
-                color: red;
+
+            h2 {
+                color: deeppink;
             }
         }
+
+        /* 425 - 768 */
+        @media all and (min-width: 425px) and (max-width: 768px) {
+            h1 {
+                color: blue;
+            }
+
+            h2 {
+                color: blue;
+            }
+        }
+
+        /* 768 - 1024 */
+        @media all and (min-width: 768px) and (max-width: 1024px) {
+            h1 {
+                color: yellow;
+            }
+
+            h2 {
+                color: yellow;
+            }
+        }
+
+        /* 1024 - 1440 */
+        @media all and (min-width: 1024px) and (max-width: 1440px) {
+            h1 {
+                color: crimson;
+                font-size: 60px;
+                border: 2px solid crimson;
+            }
+
+            h2 {
+                color: crimson;
+                font-size: 30px;
+                border: 2px solid crimson;
+            }
+        }
+
 
     </style>
 </head>
 <body>
 <h1>Let's Responsive Our Web Site</h1>
 <h2>How are you.?</h2>
+
 </body>
 </html>
