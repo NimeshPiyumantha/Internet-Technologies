@@ -22,7 +22,21 @@
         @media all and (max-width: 375px){ /*if the condition through then apply the CSS rules inside the block*/
             h1 {
                 color: green;
-                font-size: 100px;
+                font-size: 50px;
+            }
+            h2{
+                color: orangered;
+            }
+        }
+
+        @media all and (min-width: 375px) and (max-width: 425px){
+            h1 {
+                color: red;
+                font-size: 50px;
+                border: 2px solid red;
+            }
+            h2{
+                color: red;
             }
         }
 
@@ -30,5 +44,6 @@
 </head>
 <body>
 <h1>Let's Responsive Our Web Site</h1>
+<h2>How are you.?</h2>
 </body>
 </html>
