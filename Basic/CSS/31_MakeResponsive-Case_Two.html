@@ -148,16 +148,19 @@
 
         main > section > section:first-child > div:nth-child(1) {
             background: url("assets/img/gif.gif");
+            background-position: center;
             left: 0;
         }
 
         main > section > section:first-child > div:nth-child(2) {
             background: url("assets/img/gif.gif");
+            background-position: center;
             left: calc(100% / 3);
         }
 
         main > section > section:first-child > div:nth-child(3) {
             background: url("assets/img/gif.gif");
+            background-position: center;
             right: 0;
         }
 
@@ -234,11 +237,28 @@
             }
         }
 
+
+        @media all and (max-width: 768px){
+            header > nav > ul > li {
+                font-size: 16px;
+            }
+
+            main > nav {
+                display: none;
+            }
+
+            main > section {
+                margin-left: 0px;
+            }
+
+        }
+
         @media all and (max-width: 375px){
             header > nav > ul > li {
                 font-size: 12px;
             }
         }
+
     </style>
 </head>
 <body>
