@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition Case 2 | IJSE</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="assets/img/fav.png" rel="icon">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #962ce2;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            cursor: pointer;
+        }
+        div>h1{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+            color: white;
+            font-family: Ubuntu;
+        }
+
+
+
+        div::before{
+            content: " ";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: gray;
+            border-radius: 100%;
+            border: 15px solid white;
+            border-top: 15px solid crimson;
+        }
+
+        div:hover::before{
+            transform: rotate(360deg);
+            transition: all 2s;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<div>
+    <!--pseudo element-->
+    <h1>RWAD</h1>
+</div>
+
+</body>
+</html>
