@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Transitions</title>
+    <!--
+    Transitions.?
+    CSS Transitions provide a way to control the animation speed when changing CSS property values.
+    Instead of changing them suddenly, you can cause the changes in a property to take place over a
+    period of time.
+    -->
     <style>
         div {
             width: 200px;
             height: 200px;
             background: red;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 5s;
         }
 
         div:hover{
