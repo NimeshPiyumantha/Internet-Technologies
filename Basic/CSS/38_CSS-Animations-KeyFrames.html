@@ -14,17 +14,21 @@
             background-color: red;
             animation-name: my-animation; /* key frame name*/
             animation-duration: 2s; /* Time for complete one round*/
-            animation-delay: 2s; /*wait 2s and run*/
-            animation-iteration-count: 3; /* How many rounds keyframe should iterate*/ /*infinite*/
+            animation-delay: 1s; /*wait 2s and run*/
+            animation-iteration-count: 1; /* How many rounds keyframe should iterate*/ /*infinite*/
             animation-direction: alternate; /*Can manage the direction*/
+            animation-fill-mode: both; /* what frame should apply to the element at the end*/
+            animation-timing-function: linear; /*how to manage the time */
         }
 
         @keyframes my-animation {
             0% {
-               margin-left: 0px;
+                margin-left: 0px;
+                background-color: yellow;
             }
             100% {
                 margin-left: 500px;
+                background-color: orangered;
             }
 
         }
