@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animations | IJSE</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="assets/img/fav.png" rel="icon">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+        div {
+            width: 10px;
+            height: 10px;
+            border: 4px solid blue;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin:auto;
+
+            animation-name: my-animation;
+            animation-duration: .8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes my-animation {
+            0% {
+                width: 10px;
+                height: 10px;
+            }
+            100% {
+                width: 200px;
+                height: 200px;
+                opacity: 0;
+                border: 10px solid rgb(26, 147, 220);
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div>
+
+</div>
+
+</body>
+</html>
