@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Registration Form</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--link Bootstrap Framework-->
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assests/img/fav.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Customer Manage
+        </a>
+    </div>
+</nav>
+
+<section>
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Customer ID</label>
+        <input class="form-control" type="text" id="formFile">
+    </div>
+    <div class="mb-3">
+        <label for="formFileMultiple" class="form-label">Customer Name</label>
+        <input class="form-control" type="text" id="formFileMultiple" multiple>
+    </div>
+    <div class="mb-3">
+        <label for="formFileDisabled" class="form-label">Customer Address</label>
+        <input class="form-control" type="text" id="formFileDisabled">
+    </div>
+    <div class="mb-3">
+        <label for="formFileSm" class="form-label">Customer Salary</label>
+        <input class="form-control form-control-sm" id="formFileSm" type="number">
+    </div>
+
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-danger">Customer Delete</button>
+        <button type="button" class="btn btn-warning">Update</button>
+        <button type="button" class="btn btn-success">Save</button>
+    </div>
+</section>
+
+
+
+<!--Import js for bootstrap-->
+<script src="assests/js/bootstrap.min.js"></script>
+</body>
+</html>
