@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Basic.iml" filepath="$PROJECT_DIR$/.idea/Basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/CSS/CSS.iml" filepath="$PROJECT_DIR$/CSS/CSS.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CSS-Frameworks/CSS-Frameworks.iml" filepath="$PROJECT_DIR$/CSS-Frameworks/CSS-Frameworks.iml" />
       <module fileurl="file://$PROJECT_DIR$/HTML/HTML.iml" filepath="$PROJECT_DIR$/HTML/HTML.iml" />
     </modules>
   </component>

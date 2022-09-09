@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <title>CSS Frameworks</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-
     <!--link Bootstrap Framework-->
     <link href="assests/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <body>
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assests/img/fav.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Bootstrap
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Item</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 
 <h1>What are CSS Frameworks.?</h1>
 <h2>Frameworks are common solutions for common problems</h2>
@@ -20,8 +45,21 @@
 <button class="btn btn-primary">Get All Customer</button>
 <button class="btn btn-dark">Save Item</button>
 <button class="btn btn-info">Save Customer</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+
 <br>
 <br>
+
+<div class="d-grid gap-2">
+    <button class="btn btn-primary" type="button">Button</button>
+    <button class="btn btn-primary" type="button">Button</button>
+</div>
+<br>
+<br>
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+<br>
+<br>
+
 <table class="table table-bordered table-hover">
     <thead class="bg-danger text-white">
     <tr>
@@ -44,5 +82,6 @@
 
 <!--Import js for bootstrap-->
 <script src="assests/js/bootstrap.min.js"></script>
+
 </body>
 </html>
