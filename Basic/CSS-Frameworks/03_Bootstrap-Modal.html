@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Registration Form</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--link Bootstrap Framework-->
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img alt="Logo" class="d-inline-block align-text-top" height="24" src="assests/img/fav.png" width="30">
+            Customer Manage
+        </a>
+    </div>
+</nav>
+
+
+<!-- Button trigger modal -->
+<button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Customer Save</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <section>
+                    <div class="mb-3">
+                        <label class="form-label" for="formFile">Customer ID</label>
+                        <input class="form-control" id="formFile" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="formFileMultiple">Customer Name</label>
+                        <input class="form-control" id="formFileMultiple" multiple type="text">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="formFileDisabled">Customer Address</label>
+                        <input class="form-control" id="formFileDisabled" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="formFileSm">Customer Salary</label>
+                        <input class="form-control form-control-sm" id="formFileSm" type="number">
+                    </div>
+
+                    <div aria-label="Basic mixed styles example" class="btn-group" role="group">
+                        <button class="btn btn-danger" type="button">Customer Delete</button>
+                        <button class="btn btn-warning" type="button">Update</button>
+                        <button class="btn btn-success" type="button">Save</button>
+                    </div>
+                </section>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                <button class="btn btn-primary" type="button">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Import js for bootstrap-->
+<script src="assests/js/bootstrap.min.js"></script>
+</body>
+</html>
