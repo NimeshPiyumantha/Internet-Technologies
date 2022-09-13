@@ -19,24 +19,44 @@
 </head>
 <body>
 
-<section class="row">
-    <div class="col bg-primary"></div>
-    <div class="col bg-danger"></div>
-    <div class="col bg-warning"></div>
+<!--container (keep spaces from let and right)-->
+<!--container-fluid (full parent space without allocating spaces from left and right)-->
 
-</section>
+<main class="container-fluid"> <!--use a container before using the grid system-->
 
+    <section class="row">
+        <div class="col bg-primary"></div>
+        <div class="col bg-danger"></div>
+        <div class="col bg-warning"></div>
+    </section>
 
-<section class="row">
-    <div class="col bg-info"></div>
-</section>
+    <section class="row">
+        <div class="col bg-info"></div>
+    </section>
 
+    <section class="row"> <!--col spaces 12-->
+        <div class="col-9 bg-danger"></div> <!--allocate 4 spaces for this-->
+        <div class="col-3 bg-primary"></div><!--allocate 4 spaces for this-->
+        <div class="col-12 bg-primary"></div><!--allocate 12 spaces for this, eventually because there is no space at the current row this will use a new row-->
+    </section>
 
-<section class="row"> <!--col spaces 12-->
-    <div class="col-5 bg-danger"></div> <!--allocate 4 spaces for this-->
-    <div class="col-4 bg-primary"></div><!--allocate 4 spaces for this-->
-    <div class="col-4 bg-danger"></div><!--allocate 4 spaces for this-->
-</section>
+    <section class="row"> <!--col spaces 12-->
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+
+    </section>
+
+</main>
 
 
 <!--Import js for bootstrap-->
