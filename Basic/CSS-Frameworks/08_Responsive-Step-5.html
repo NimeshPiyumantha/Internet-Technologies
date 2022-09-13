@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Frameworks | Responsive</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--link Bootstrap Framework-->
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        section {
+            border: 1px solid red;
+        }
+
+        section > div {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+<!--container (keep spaces from let and right)-->
+<!--container-fluid (full parent space without allocating spaces from left and right)-->
+
+<main class="container-fluid"> <!--use a container before using the grid system-->
+
+    <!-- Device Breakpoints
+    xs - col
+    sm - col-sm
+    md - com-md
+    lg - col-lg
+    xl - col-xl
+    xxl - col-xxl
+    -->
+    <section class="row">
+
+        <div class="col-12 col-md-6 col-xl d-none d-md-block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque distinctio ipsa natus repellendus vitae.
+                Commodi consequatur dicta earum ex id magnam maiores minima molestiae nemo provident quae quis, quos
+                sit.</p>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque distinctio ipsa natus repellendus vitae.
+                Commodi consequatur dicta earum ex id magnam maiores minima molestiae nemo provident quae quis, quos
+                sit.</p>
+        </div>
+
+
+        <div class="col-12 col-md-6 col-xl">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque distinctio ipsa natus repellendus vitae.
+                Commodi consequatur dicta earum ex id magnam maiores minima molestiae nemo provident quae quis, quos
+                sit.</p>
+        </div>
+
+
+        <div class="col-12 col-md-6 col-xl">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque distinctio ipsa natus repellendus vitae.
+                Commodi consequatur dicta earum ex id magnam maiores minima molestiae nemo provident quae quis, quos
+                sit.</p>
+        </div>
+    </section>
+
+</main>
+
+
+<!--Import js for bootstrap-->
+<script src="assests/js/bootstrap.min.js"></script>
+
+</body>
+</html>
