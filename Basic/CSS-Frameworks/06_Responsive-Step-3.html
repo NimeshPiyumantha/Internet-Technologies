@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Frameworks | Responsive</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--link Bootstrap Framework-->
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        section {
+            height: 400px;
+            border: 1px solid red;
+        }
+
+        section > div {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+<!--container (keep spaces from let and right)-->
+<!--container-fluid (full parent space without allocating spaces from left and right)-->
+
+<main class="container-fluid"> <!--use a container before using the grid system-->
+
+    <section class="row"><!--12 spaces available-->
+        <div class="col-12 col-sm-6 bg-primary"></div>
+        <div class="col-12 col-sm-6 bg-danger"></div>
+        <div class="col-12 col-sm-12 bg-warning"></div>
+    </section>
+
+    <!--    <section class="row">-->
+    <!--        <div class="col bg-info"></div>-->
+    <!--    </section>-->
+
+    <!--    <section class="row"> &lt;!&ndash;col spaces 12&ndash;&gt;-->
+    <!--        <div class="col-9 bg-danger"></div> &lt;!&ndash;allocate 4 spaces for this&ndash;&gt;-->
+    <!--        <div class="col-3 bg-primary"></div>&lt;!&ndash;allocate 4 spaces for this&ndash;&gt;-->
+    <!--        <div class="col-12 bg-primary"></div>&lt;!&ndash;allocate 12 spaces for this, eventually because there is no space at the current row this will use a new row&ndash;&gt;-->
+    <!--    </section>-->
+
+
+</main>
+
+
+<!--Import js for bootstrap-->
+<script src="assests/js/bootstrap.min.js"></script>
+
+</body>
+</html>
